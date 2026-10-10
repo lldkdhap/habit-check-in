@@ -1,0 +1,47 @@
+{
+  "applicationId": "cn.local.habit-tracker-station",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/ui-dist/",
+  "url": "/",
+  "port": 0,
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "storage.*"
+  ],
+  "singlePageServe": true,
+  "dataLocation": "app",
+  "storageLocation": "app",
+  "applicationIcon": "buildAssets/appIcon.png",
+  "modes": {
+    "window": {
+      "title": "习惯打卡站",
+      "width": 1100,
+      "height": 760,
+      "minWidth": 900,
+      "minHeight": 650,
+      "resizable": true,
+      "center": true,
+      "icon": "buildAssets/appIcon.png",
+      "enableInspector": false
+    }
+  },
+  "cli": {
+    "binaryName": "habit-tracker-station",
+    "resourcesPath": "/ui-dist/",
+    "frontendLibrary": {
+      "patchFile": "/index.html",
+      "devUrl": "http://localhost:5173",
+      "projectPath": "/",
+      "initCommand": "npm install",
+      "devCommand": "npm run dev",
+      "buildCommand": "npm run build"
+    },
+    "binaryVersion": "6.9.0"
+  }
+}
+
+
+
+
